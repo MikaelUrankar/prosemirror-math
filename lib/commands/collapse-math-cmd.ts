@@ -88,9 +88,9 @@ export function collapseMathCmd(
 			 * To fix this, we need to move the focus to some specific element, e.g. a button,
 			 * and then move it back to the outer view.
 			 * (No idea why this works, but a div doesn't work.)
-			 * Only Firefox needs this, so we check the user agent.
+			 * Only Gecko (Firefox/Zotero) needs this, so we check the user agent.
 			 */
-			if (window.navigator.userAgent.includes("Firefox")) {
+			if (window.navigator.userAgent.includes("Gecko")) {
 				const tmpBtn = document.createElement("button");
 				document.body.append(tmpBtn);
 				tmpBtn.focus();
