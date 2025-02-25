@@ -29,7 +29,7 @@
     "@types/katex": "^0.16.7",
     "@types/node": "^20.12.7",
     "prosemirror-gapcursor": "^1.3.2",
-    "typescript": "^5.4.5",
+    "typescript": "5.4.5",
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.8.1",
     "vite-tsconfig-paths": "^4.3.2"
@@ -44,5 +44,8 @@
     "prosemirror-state": "^1.4.3",
     "prosemirror-transform": "^1.8.0",
     "prosemirror-view": "^1.33.4"
+  },
+  "overrides": {
+    "rollup": "npm:@rollup/wasm-node"
   }
 }
